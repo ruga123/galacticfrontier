@@ -1,0 +1,7 @@
+{
+  "parent": "block/leaves",
+  "textures": {
+    "all": "galactic_frontier:blocks/frozendirt",
+    "particle": "galactic_frontier:blocks/frozendirt"
+  }
+}

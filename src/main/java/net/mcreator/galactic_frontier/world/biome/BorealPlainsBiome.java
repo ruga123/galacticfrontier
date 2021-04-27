@@ -20,8 +20,7 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
 
-import net.mcreator.galactic_frontier.block.FrostedSandBlock;
-import net.mcreator.galactic_frontier.block.DryIcBlock;
+import net.mcreator.galactic_frontier.block.FrozenDirtBlock;
 import net.mcreator.galactic_frontier.GalacticFrontierModElements;
 
 @GalacticFrontierModElements.ModElement.Tag
@@ -41,8 +40,8 @@ public class BorealPlainsBiome extends GalacticFrontierModElements.ModElement {
 								.getValue(new ResourceLocation("ambient.warped_forest.additions")))
 						.build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
-						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(DryIcBlock.block.getDefaultState(),
-								FrostedSandBlock.block.getDefaultState(), FrostedSandBlock.block.getDefaultState())));
+						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(FrozenDirtBlock.block.getDefaultState(),
+								FrozenDirtBlock.block.getDefaultState(), FrozenDirtBlock.block.getDefaultState())));
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();

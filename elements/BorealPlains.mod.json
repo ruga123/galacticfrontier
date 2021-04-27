@@ -4,10 +4,10 @@
   "definition": {
     "name": "Boreal Plains",
     "groundBlock": {
-      "value": "CUSTOM:DryIc"
+      "value": "CUSTOM:FrozenDirt"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:FrostedSand"
+      "value": "CUSTOM:FrozenDirt"
     },
     "ambientSound": {
       "value": "ambient.warped_forest.additions"
