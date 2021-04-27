@@ -1,0 +1,32 @@
+{
+  "group": "cobbled_frost_stone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "galactic_frontier:cobbled_froststone"
+    },
+    "1": {
+      "item": "galactic_frontier:cobbled_froststone"
+    },
+    "2": {
+      "item": "galactic_frontier:cobbled_froststone"
+    },
+    "3": {
+      "item": "galactic_frontier:cobbled_froststone"
+    },
+    "4": {
+      "item": "galactic_frontier:cobbled_froststone"
+    },
+    "5": {
+      "item": "galactic_frontier:cobbled_froststone"
+    }
+  },
+  "result": {
+    "item": "galactic_frontier:cobbled_froststone_wall",
+    "count": 6
+  }
+}

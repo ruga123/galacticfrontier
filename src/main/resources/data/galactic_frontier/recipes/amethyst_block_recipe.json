@@ -1,0 +1,42 @@
+{
+  "group": "galactic_frontier",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "galactic_frontier:amethyst"
+    },
+    "1": {
+      "item": "galactic_frontier:amethyst"
+    },
+    "2": {
+      "item": "galactic_frontier:amethyst"
+    },
+    "3": {
+      "item": "galactic_frontier:amethyst"
+    },
+    "4": {
+      "item": "galactic_frontier:amethyst"
+    },
+    "5": {
+      "item": "galactic_frontier:amethyst"
+    },
+    "6": {
+      "item": "galactic_frontier:amethyst"
+    },
+    "7": {
+      "item": "galactic_frontier:amethyst"
+    },
+    "8": {
+      "item": "galactic_frontier:amethyst"
+    }
+  },
+  "result": {
+    "item": "galactic_frontier:amethyst_block",
+    "count": 1
+  }
+}

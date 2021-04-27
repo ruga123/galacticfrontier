@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "galactic_frontier:blocks/pyroxene",
+    "up": "galactic_frontier:blocks/pyroxene",
+    "north": "galactic_frontier:blocks/pyroxene",
+    "east": "galactic_frontier:blocks/pyroxene",
+    "south": "galactic_frontier:blocks/pyroxene",
+    "west": "galactic_frontier:blocks/pyroxene",
+    "particle": "galactic_frontier:blocks/pyroxene"
+  }
+}

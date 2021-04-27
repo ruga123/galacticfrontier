@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "galactic_frontier:block/cobbled_froststone_slab"
+    },
+    "type=top": {
+      "model": "galactic_frontier:block/cobbled_froststone_slab_top"
+    },
+    "type=double": {
+      "model": "galactic_frontier:block/cobbled_froststone_slab_full"
+    }
+  }
+}

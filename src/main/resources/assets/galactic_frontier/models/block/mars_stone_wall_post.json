@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_post",
+  "textures": {
+    "wall": "galactic_frontier:blocks/martianstone",
+    "particle": "galactic_frontier:blocks/martianstone"
+  }
+}

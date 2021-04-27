@@ -1,0 +1,9 @@
+{
+  "group": "cobbled_frost_stone",
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "galactic_frontier:cobbled_froststone"
+  },
+  "result": "galactic_frontier:cobbled_froststone_stair"
+}

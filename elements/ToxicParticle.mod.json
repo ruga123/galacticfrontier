@@ -1,0 +1,21 @@
+{
+  "_fv": 18,
+  "_type": "particle",
+  "definition": {
+    "texture": "toxicpart.png",
+    "animate": true,
+    "frameDuration": 4,
+    "width": 0.2,
+    "height": 0.2,
+    "scale": 1.6,
+    "speedFactor": 0.0,
+    "gravity": -0.1,
+    "maxAge": 22,
+    "maxAgeDiff": 2,
+    "angularVelocity": 0.0,
+    "angularAcceleration": 0.0,
+    "canCollide": true,
+    "alwaysShow": false,
+    "renderType": "TRANSLUCENT"
+  }
+}

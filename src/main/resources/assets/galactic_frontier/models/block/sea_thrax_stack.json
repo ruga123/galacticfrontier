@@ -1,0 +1,7 @@
+{
+  "parent": "block/tinted_cross",
+  "textures": {
+    "cross": "galactic_frontier:blocks/seathraxplant",
+    "particle": "galactic_frontier:blocks/seathraxplant"
+  }
+}

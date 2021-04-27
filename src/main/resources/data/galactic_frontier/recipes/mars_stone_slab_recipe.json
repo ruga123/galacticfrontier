@@ -1,0 +1,22 @@
+{
+  "group": "marsstone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "galactic_frontier:mars_stone"
+    },
+    "1": {
+      "item": "galactic_frontier:mars_stone"
+    },
+    "2": {
+      "item": "galactic_frontier:mars_stone"
+    }
+  },
+  "result": {
+    "item": "galactic_frontier:mars_stone_slab",
+    "count": 6
+  }
+}

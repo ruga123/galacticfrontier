@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "smoothquartztexture",
+        "1": "satelite1",
+        "2": "satelite2"
+      },
+      "name": "default"
+    }
+  }
+}

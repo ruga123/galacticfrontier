@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "galactic_frontier:block/frost_stone_slab"
+    },
+    "type=top": {
+      "model": "galactic_frontier:block/frost_stone_slab_top"
+    },
+    "type=double": {
+      "model": "galactic_frontier:block/frost_stone_slab_full"
+    }
+  }
+}

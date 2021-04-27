@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "galactic_frontier:blocks/marsironore",
+    "up": "galactic_frontier:blocks/marsironore",
+    "north": "galactic_frontier:blocks/marsironore",
+    "east": "galactic_frontier:blocks/marsironore",
+    "south": "galactic_frontier:blocks/marsironore",
+    "west": "galactic_frontier:blocks/marsironore",
+    "particle": "galactic_frontier:blocks/marsironore"
+  }
+}

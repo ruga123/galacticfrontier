@@ -1,0 +1,24 @@
+{
+  "group": "galactic_frontier",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "galactic_frontier:martian_opal"
+    },
+    "1": {
+      "item": "galactic_frontier:martian_opal"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "galactic_frontier:martian_sword",
+    "count": 1
+  }
+}

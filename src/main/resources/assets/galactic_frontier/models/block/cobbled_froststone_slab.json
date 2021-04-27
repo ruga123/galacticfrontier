@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "galactic_frontier:blocks/cobbled_froststone",
+    "top": "galactic_frontier:blocks/cobbled_froststone",
+    "side": "galactic_frontier:blocks/cobbled_froststone"
+  }
+}

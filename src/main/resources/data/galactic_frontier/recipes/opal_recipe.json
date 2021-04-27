@@ -1,0 +1,13 @@
+{
+  "group": "galactic_frontier",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "galactic_frontier:opal_block"
+    }
+  ],
+  "result": {
+    "item": "galactic_frontier:martian_opal",
+    "count": 9
+  }
+}

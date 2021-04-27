@@ -1,0 +1,33 @@
+{
+  "group": "frost_stone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "galactic_frontier:frost_stone_loot"
+    },
+    "3": {
+      "item": "galactic_frontier:frost_stone_loot"
+    },
+    "4": {
+      "item": "galactic_frontier:frost_stone_loot"
+    },
+    "6": {
+      "item": "galactic_frontier:frost_stone_loot"
+    },
+    "7": {
+      "item": "galactic_frontier:frost_stone_loot"
+    },
+    "8": {
+      "item": "galactic_frontier:frost_stone_loot"
+    }
+  },
+  "result": {
+    "item": "galactic_frontier:frost_stone_stair",
+    "count": 4
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_fv": 18,
+  "_type": "tab",
+  "definition": {
+    "name": "Alloys",
+    "icon": {
+      "value": "CUSTOM:AncientAlloyIngot"
+    },
+    "showSearch": false
+  }
+}

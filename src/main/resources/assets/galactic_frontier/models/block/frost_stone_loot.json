@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "galactic_frontier:blocks/froststone",
+    "up": "galactic_frontier:blocks/froststone",
+    "north": "galactic_frontier:blocks/froststone",
+    "east": "galactic_frontier:blocks/froststone",
+    "south": "galactic_frontier:blocks/froststone",
+    "west": "galactic_frontier:blocks/froststone",
+    "particle": "galactic_frontier:blocks/froststone"
+  }
+}

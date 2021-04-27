@@ -1,0 +1,22 @@
+{
+  "_fv": 18,
+  "_type": "potion",
+  "definition": {
+    "name": "Toxic",
+    "effectName": "Toxic",
+    "icon": "toxicicon.png",
+    "color": {
+      "value": -6750055,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "registerPotionType": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "ToxicOnPotionActiveTick"
+    }
+  }
+}

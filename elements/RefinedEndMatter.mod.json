@@ -1,0 +1,24 @@
+{
+  "_fv": 18,
+  "_type": "fluid",
+  "definition": {
+    "name": "RefinedEndMatter",
+    "textureStill": "refinedendmatterstill",
+    "textureFlowing": "endmatterflow",
+    "luminosity": 5,
+    "density": 500,
+    "viscosity": 1500,
+    "isGas": false,
+    "type": "WATER",
+    "generateBucket": false,
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "frequencyOnChunks": 5,
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "onEntityCollides": {
+      "name": "RefinedEndMatterMobplayerCollidesBlock"
+    }
+  }
+}

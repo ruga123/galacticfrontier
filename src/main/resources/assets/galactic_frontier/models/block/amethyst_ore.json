@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "galactic_frontier:blocks/marsamethystore",
+    "up": "galactic_frontier:blocks/marsamethystore",
+    "north": "galactic_frontier:blocks/marsamethystore",
+    "east": "galactic_frontier:blocks/marsamethystore",
+    "south": "galactic_frontier:blocks/marsamethystore",
+    "west": "galactic_frontier:blocks/marsamethystore",
+    "particle": "galactic_frontier:blocks/marsamethystore"
+  }
+}

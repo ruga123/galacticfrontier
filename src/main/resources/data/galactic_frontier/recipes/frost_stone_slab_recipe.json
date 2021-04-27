@@ -1,0 +1,9 @@
+{
+  "group": "frost_stone",
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "galactic_frontier:frost_stone_loot"
+  },
+  "result": "galactic_frontier:frost_stone_slab"
+}

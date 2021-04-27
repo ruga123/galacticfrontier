@@ -1,0 +1,46 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "cobbled_frost_stone",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CobbledFroststone"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CobbledFroststone"
+      },
+      {
+        "value": "CUSTOM:CobbledFroststone"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CobbledFroststone"
+      },
+      {
+        "value": "CUSTOM:CobbledFroststone"
+      },
+      {
+        "value": "CUSTOM:CobbledFroststone"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CobbledFroststoneStair"
+    },
+    "name": "cobbled_frost_stone_stair_recipe_2",
+    "namespace": "mod"
+  }
+}

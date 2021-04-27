@@ -1,0 +1,42 @@
+{
+  "group": "titanium",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "galactic_frontier:raw_titanium"
+    },
+    "1": {
+      "item": "galactic_frontier:raw_titanium"
+    },
+    "2": {
+      "item": "galactic_frontier:raw_titanium"
+    },
+    "3": {
+      "item": "galactic_frontier:raw_titanium"
+    },
+    "4": {
+      "item": "galactic_frontier:raw_titanium"
+    },
+    "5": {
+      "item": "galactic_frontier:raw_titanium"
+    },
+    "6": {
+      "item": "galactic_frontier:raw_titanium"
+    },
+    "7": {
+      "item": "galactic_frontier:raw_titanium"
+    },
+    "8": {
+      "item": "galactic_frontier:raw_titanium"
+    }
+  },
+  "result": {
+    "item": "galactic_frontier:raw_titanium_block",
+    "count": 1
+  }
+}

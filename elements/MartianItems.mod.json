@@ -1,0 +1,11 @@
+{
+  "_fv": 18,
+  "_type": "tab",
+  "definition": {
+    "name": "Martian Items",
+    "icon": {
+      "value": "CUSTOM:MartianIngot"
+    },
+    "showSearch": false
+  }
+}

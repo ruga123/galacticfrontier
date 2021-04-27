@@ -1,0 +1,33 @@
+{
+  "_fv": 18,
+  "_type": "structure",
+  "definition": {
+    "structure": "seathrax",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 300000,
+    "minCountPerChunk": 12,
+    "maxCountPerChunk": 16,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 0,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "CUSTOM:Boreas"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "CUSTOM:FrostedSand"
+      }
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:BorealSeas"
+      }
+    ],
+    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK",
+    "onStructureGenerated": {
+      "name": "SeaThraxSpawnOnStructureInstanceGenerated"
+    }
+  }
+}

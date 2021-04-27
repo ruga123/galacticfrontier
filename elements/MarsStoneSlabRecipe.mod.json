@@ -1,0 +1,46 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 6,
+    "group": "marsstone",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MarsStone"
+      },
+      {
+        "value": "CUSTOM:MarsStone"
+      },
+      {
+        "value": "CUSTOM:MarsStone"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MarsStoneSlab"
+    },
+    "name": "mars_stone_slab_recipe",
+    "namespace": "mod"
+  }
+}

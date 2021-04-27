@@ -1,0 +1,42 @@
+{
+  "group": "galactic_frontier",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "galactic_frontier:martian_opal"
+    },
+    "1": {
+      "item": "galactic_frontier:martian_opal"
+    },
+    "2": {
+      "item": "galactic_frontier:martian_opal"
+    },
+    "3": {
+      "item": "galactic_frontier:martian_opal"
+    },
+    "4": {
+      "item": "galactic_frontier:martian_opal"
+    },
+    "5": {
+      "item": "galactic_frontier:martian_opal"
+    },
+    "6": {
+      "item": "galactic_frontier:martian_opal"
+    },
+    "7": {
+      "item": "galactic_frontier:martian_opal"
+    },
+    "8": {
+      "item": "galactic_frontier:martian_opal"
+    }
+  },
+  "result": {
+    "item": "galactic_frontier:opal_block",
+    "count": 1
+  }
+}

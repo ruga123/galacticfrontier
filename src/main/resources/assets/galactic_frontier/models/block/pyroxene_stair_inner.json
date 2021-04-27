@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "galactic_frontier:blocks/pyroxene",
+    "top": "galactic_frontier:blocks/pyroxene",
+    "side": "galactic_frontier:blocks/pyroxene"
+  }
+}

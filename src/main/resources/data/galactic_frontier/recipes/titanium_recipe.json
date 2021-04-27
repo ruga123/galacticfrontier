@@ -1,0 +1,13 @@
+{
+  "group": "titanium",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "galactic_frontier:titanium_block"
+    }
+  ],
+  "result": {
+    "item": "galactic_frontier:titanium_ingot",
+    "count": 9
+  }
+}

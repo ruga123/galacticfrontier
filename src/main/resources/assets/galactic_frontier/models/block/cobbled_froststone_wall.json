@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "galactic_frontier:blocks/cobbled_froststone",
+    "particle": "galactic_frontier:blocks/cobbled_froststone"
+  }
+}
