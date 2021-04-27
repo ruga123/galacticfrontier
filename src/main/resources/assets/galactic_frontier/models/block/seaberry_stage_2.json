@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "galactic_frontier:blocks/seaberry2",
+    "particle": "galactic_frontier:blocks/seaberry2"
+  }
+}

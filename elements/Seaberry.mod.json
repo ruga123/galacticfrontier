@@ -2,24 +2,24 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "frozendirt",
+    "texture": "seaberry5",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 11,
-    "customModelName": "Single texture",
+    "renderType": 12,
+    "customModelName": "Cross model",
     "rotationMode": 0,
-    "emissiveRendering": false,
-    "displayFluidOverlay": false,
-    "itemTexture": "",
+    "emissiveRendering": true,
+    "displayFluidOverlay": true,
+    "itemTexture": "seaberryitem",
     "particleTexture": "",
     "tintType": "No tint",
-    "isItemTinted": true,
-    "hasTransparency": false,
+    "isItemTinted": false,
+    "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "CUTOUT",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -32,37 +32,37 @@
         "subtract": false
       }
     ],
-    "name": "Frozen Dirt",
+    "name": "Seaberry",
     "specialInfo": [],
-    "hardness": 0.3,
-    "resistance": 1.0,
-    "hasGravity": true,
-    "isWaterloggable": false,
+    "hardness": 0.0,
+    "resistance": 0.0,
+    "hasGravity": false,
+    "isWaterloggable": true,
     "creativeTab": {
-      "value": "CUSTOM:BoreasItems"
+      "value": "No creative tab entry"
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "dropAmount": 1,
-    "useLootTableForDrops": false,
+    "useLootTableForDrops": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
-    "lightOpacity": 255,
+    "lightOpacity": 0,
     "material": {
-      "value": "SAND"
+      "value": "PLANTS"
     },
     "tickRate": 10,
-    "tickRandomly": false,
+    "tickRandomly": true,
     "isReplaceable": false,
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "WATER",
     "creativePickItem": {
       "value": ""
     },
-    "offsetType": "NONE",
-    "aiPathNodeType": "DEFAULT",
+    "offsetType": "XZ",
+    "aiPathNodeType": "DAMAGE_OTHER",
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
@@ -70,16 +70,16 @@
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
-    "isNotColidable": false,
+    "isNotColidable": true,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "PLANT"
     },
-    "luminance": 0,
+    "luminance": 3,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "CUSTOM:ToxicParticle"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
@@ -101,16 +101,28 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [],
-    "restrictionBiomes": [],
-    "blocksToReplace": [
+    "onRightClicked": {
+      "name": "SeaberryOnBlockRightClicked"
+    },
+    "spawnWorldTypes": [
+      "CUSTOM:Boreas"
+    ],
+    "restrictionBiomes": [
       {
-        "value": "Blocks.STONE"
+        "value": "CUSTOM:BorealSeas"
       }
     ],
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
+    "blocksToReplace": [
+      {
+        "value": "Blocks.FLOWING_WATER"
+      }
+    ],
+    "frequencyPerChunks": 29,
+    "frequencyOnChunk": 12,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "maxGenerateHeight": 64,
+    "generateCondition": {
+      "name": "SeaberryAdditionalGenerationCondition"
+    }
   }
 }

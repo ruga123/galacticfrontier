@@ -2,13 +2,7 @@
 package net.mcreator.galactic_frontier.block;
 
 import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.client.event.ColorHandlerEvent;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.biome.BiomeColors;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
@@ -31,8 +25,6 @@ public class FrozenDirtBlock extends GalacticFrontierModElements.ModElement {
 	public static final Block block = null;
 	public FrozenDirtBlock(GalacticFrontierModElements instance) {
 		super(instance, 355);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new BlockColorRegisterHandler());
-		FMLJavaModLoadingContext.get().getModEventBus().register(new ItemColorRegisterHandler());
 	}
 
 	@Override
@@ -41,26 +33,6 @@ public class FrozenDirtBlock extends GalacticFrontierModElements.ModElement {
 		elements.items
 				.add(() -> new BlockItem(block, new Item.Properties().group(BoreasItemsItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
-	private static class BlockColorRegisterHandler {
-		@OnlyIn(Dist.CLIENT)
-		@SubscribeEvent
-		public void blockColorLoad(ColorHandlerEvent.Block event) {
-			event.getBlockColors().register((bs, world, pos, index) -> {
-				return world != null && pos != null ? BiomeColors.getWaterColor(world, pos) : -1;
-			}, block);
-		}
-	}
-
-	private static class ItemColorRegisterHandler {
-		@OnlyIn(Dist.CLIENT)
-		@SubscribeEvent
-		public void itemColorLoad(ColorHandlerEvent.Item event) {
-			event.getItemColors().register((stack, index) -> {
-				return 3694022;
-			}, block);
-		}
-	}
-
 	public static class CustomBlock extends FallingBlock {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.SAND).sound(SoundType.GROUND).hardnessAndResistance(0.3f, 1f).setLightLevel(s -> 0));
