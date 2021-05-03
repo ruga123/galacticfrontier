@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "galactic_frontier:sea_berry_new",
+          "name": "galactic_frontier:sea_berry_item",
           "weight": 1,
           "functions": [
             {

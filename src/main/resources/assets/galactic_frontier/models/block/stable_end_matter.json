@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "galactic_frontier:blocks/stableendmatter",
-    "particle": "galactic_frontier:blocks/stableendmatter"
-  }
-}

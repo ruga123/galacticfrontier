@@ -2,307 +2,6 @@
   "id_map": {},
   "mod_elements": [
     {
-      "name": "EndMatter",
-      "type": "block",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "end_matter"
-    },
-    {
-      "name": "EndMatterEntityWalksOnTheBlock",
-      "type": "procedure",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "end_matter_entity_walks_on_the_block",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "EndMatterBlockDestroyedByExplosion",
-      "type": "procedure",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "end_matter_block_destroyed_by_explosion",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "StableEndMatter",
-      "type": "block",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "stable_end_matter"
-    },
-    {
-      "name": "DetectDragonKill",
-      "type": "procedure",
-      "sortid": 5,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "detect_dragon_kill",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "MeteoriteNaturalEntitySpawningCondition",
-      "type": "procedure",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "meteorite_natural_entity_spawning_condition",
-      "metadata": {
-        "return_type": "LOGIC",
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Meteorite",
-      "type": "mob",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "meteorite"
-    },
-    {
-      "name": "MeteoriteOnInitialEntitySpawn",
-      "type": "procedure",
-      "sortid": 7,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "meteorite_on_initial_entity_spawn",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "RefinedEndMatter",
-      "type": "fluid",
-      "sortid": 8,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "refined_end_matter"
-    },
-    {
-      "name": "RefinedEndMatterFuel",
-      "type": "fuel",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "refined_end_matter_fuel"
-    },
-    {
-      "name": "RefinedEndMatterMobplayerCollidesBlock",
-      "type": "procedure",
-      "sortid": 12,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "refined_end_matter_mobplayer_collides_block",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "EndMatterContainer",
-      "type": "item",
-      "sortid": 13,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "end_matter_container"
-    },
-    {
-      "name": "SpecializedContainer",
-      "type": "item",
-      "sortid": 14,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "specialized_container"
-    },
-    {
-      "name": "SpecializedContainerRightClicked",
-      "type": "procedure",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "specialized_container_right_clicked",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "direction",
-            "type": "direction"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "SpecializedContainerRecipe",
-      "type": "recipe",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "specialized_container_recipe"
-    },
-    {
-      "name": "EndMatterContainerRightClicked",
-      "type": "procedure",
-      "sortid": 17,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "end_matter_container_right_clicked",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "direction",
-            "type": "direction"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "MarsStone",
       "type": "block",
       "sortid": 19,
@@ -1873,16 +1572,6 @@
       "path": "~/DryIceSpawner"
     },
     {
-      "name": "DryIceSpawner",
-      "type": "structure",
-      "sortid": 261,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dry_ice_spawner",
-      "path": "~/DryIceSpawner"
-    },
-    {
       "name": "CobbledFroststoneSlab",
       "type": "block",
       "sortid": 322,
@@ -2595,6 +2284,101 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sea_berry_item"
+    },
+    {
+      "name": "SeaBerrySpawn",
+      "type": "structure",
+      "sortid": 371,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sea_berry_spawn"
+    },
+    {
+      "name": "SeaBerrySpawnAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 372,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sea_berry_spawn_additional_generation_condition",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FrostMagmaEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 373,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "frost_magma_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FrostMagma",
+      "type": "block",
+      "sortid": 373,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "frost_magma"
+    },
+    {
+      "name": "FrostMagmaAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 374,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "frost_magma_additional_generation_condition",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2608,49 +2392,44 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.galactic_frontier.bismuth_ore": "Mars Bismuth Ore",
       "block.galactic_frontier.mars_stone": "Mars Stone",
+      "block.galactic_frontier.bismuth_ore": "Mars Bismuth Ore",
       "biome.galactic_frontier.boreal_seas": "Boreal Seas",
-      "entity.galactic_frontier.meteorite": "Meteorite",
       "death.attack.endmatter": "%1$s was molten in end matter",
       "item.galactic_frontier.titanium_armor_helmet": "Titanium Helmet",
       "itemGroup.taballoys": "Alloys",
       "block.galactic_frontier.alloy_tank": "Alloy Tank",
-      "item.galactic_frontier.titanium_axe": "Titanium Axe",
       "item.galactic_frontier.martian_shovel": "Martian Opal Shovel",
+      "item.galactic_frontier.titanium_axe": "Titanium Axe",
       "item.galactic_frontier.sea_berry_item": "Sea Berries",
       "block.galactic_frontier.titanium_block": "Titanium Block",
       "block.galactic_frontier.opal_block": "Martian Opal Block",
       "block.galactic_frontier.bismuth": "Bismuth Block",
-      "item.galactic_frontier.meteorite_spawn_egg": "Meteorite Spawn Egg",
       "block.galactic_frontier.sea_thrax": "Sea Thrax",
       "item.galactic_frontier.satelite_spawn_egg": "Satelite Spawn Egg",
-      "itemGroup.tabmartian_items": "Martian Items",
       "block.galactic_frontier.amethyst_block": "Amethyst Block",
       "item.minecraft.potion.effect.toxic": "Toxic",
+      "itemGroup.tabmartian_items": "Martian Items",
       "block.galactic_frontier.frost_stone_slab": "Frost Stone",
       "block.galactic_frontier.mars_coal_ore": "Mars Coal Ore",
       "block.galactic_frontier.mars_debri": "Martian Dust",
       "item.minecraft.lingering_potion.effect.toxic": "Lingering Toxic",
-      "fluid.refined_end_matter": "RefinedEndMatter",
       "item.galactic_frontier.amethyst": "Amethyst",
       "block.galactic_frontier.mars_iron": "Mars Iron Ore",
       "item.minecraft.tipped_arrow.effect.toxic": "Arrow of Toxic",
       "block.galactic_frontier.cobbled_froststone": "Cobbled Frost Stone",
-      "item.galactic_frontier.martian_hoe": "Martian Opal Hoe",
       "block.galactic_frontier.cobbled_froststone_slab": "Cobbled Frost Stone Slab",
+      "item.galactic_frontier.martian_hoe": "Martian Opal Hoe",
       "item.galactic_frontier.deep_slime_ball": "Deep Slime Ball",
-      "block.galactic_frontier.end_matter": "End Matter",
       "block.galactic_frontier.mars_stone_stair": "Mars Stone Stairs",
       "block.galactic_frontier.mars_stone_slab": "Mars Stone Slab",
       "block.galactic_frontier.raw_titanium_block": "Raw Titanium Block",
       "death.attack.toxic": "%1$s died of poison",
       "item.galactic_frontier.bismuth_crystal": "Bismuth Crystal",
-      "item.galactic_frontier.end_matter_container": "Refined End Matter Container",
       "item.galactic_frontier.titanium_ingot": "Titanium Ingot",
       "block.galactic_frontier.seaberry_stage_2": "Seaberry",
-      "block.galactic_frontier.pyroxene_wall": "Pyroxene Wall",
       "item.galactic_frontier.martian_pickaxe": "Martian Opal Pickaxe",
+      "block.galactic_frontier.pyroxene_wall": "Pyroxene Wall",
       "block.galactic_frontier.ancient_alloy_block": "§eAncient Alloy Block",
       "item.galactic_frontier.martian_sword": "Martian Opal Sword",
       "biome.galactic_frontier.mars_wasteland": "Mars Wasteland",
@@ -2659,10 +2438,8 @@
       "block.galactic_frontier.mars_stone_wall": "Mars Stone Wall",
       "block.galactic_frontier.frost_stone_wall": "Frost Stone",
       "item.galactic_frontier.mars": "Mars Portal Igniter",
-      "item.galactic_frontier.specialized_container": "Specialized Container",
       "entity.galactic_frontier.satelite": "Satelite",
       "item.galactic_frontier.titanium_armor_leggings": "Titanium Leggings",
-      "block.galactic_frontier.stable_end_matter": "Stablilized End Matter",
       "item.galactic_frontier.raw_titanium": "Raw Titanium",
       "item.galactic_frontier.martian_opal": "Martian Opal",
       "entity.galactic_frontier.deep_slime": "Deep Slime",
@@ -2671,9 +2448,9 @@
       "block.galactic_frontier.sea_berry_stage_4": "Seaberry",
       "block.galactic_frontier.sea_berry_ripe": "Seaberry",
       "block.galactic_frontier.cobbled_froststone_wall": "Cobbled Frost Stone Slab",
-      "item.galactic_frontier.refined_end_matter_bucket": "RefinedEndMatter Bucket",
-      "item.galactic_frontier.titanium_hoe": "Titanium Hoe",
+      "block.galactic_frontier.frost_magma": "Frost Magma Block",
       "item.galactic_frontier.titanium_shovel": "Titanium Shovel",
+      "item.galactic_frontier.titanium_hoe": "Titanium Hoe",
       "block.galactic_frontier.sea_thrax_stack": "Sea Thrax",
       "block.galactic_frontier.pyroxene_slab": "Pyroxene Slab",
       "block.galactic_frontier.cobbled_froststone_stair": "Cobbled Frost Stone Slab",
@@ -2684,24 +2461,24 @@
       "biome.galactic_frontier.martian_barrens": "Martian Barrens",
       "itemGroup.tabboreas_items": "Boreas Items",
       "block.galactic_frontier.amethyst_ore": "Mars Amethyst Ore",
-      "item.galactic_frontier.tempered_netherite_ingot": "Tempered Netherite Ingot",
       "effect.toxic": "Toxic",
+      "item.galactic_frontier.tempered_netherite_ingot": "Tempered Netherite Ingot",
       "item.galactic_frontier.martian_ingot": "Martian Ingot",
       "item.galactic_frontier.martian_axe": "Martian Opal Axe",
       "item.galactic_frontier.martian_scrap": "Martian Scrap",
-      "item.galactic_frontier.titanium_armor_boots": "Titanium Boots",
       "item.galactic_frontier.ancient_alloy_ingot": "Ancient Alloy Ingot",
+      "item.galactic_frontier.titanium_armor_boots": "Titanium Boots",
       "biome.galactic_frontier.boreal_plains": "Boreal Plains",
-      "item.galactic_frontier.titanium_armor_chestplate": "Titanium Chestplate",
       "item.minecraft.splash_potion.effect.toxic": "Splash Toxic",
+      "item.galactic_frontier.titanium_armor_chestplate": "Titanium Chestplate",
       "block.galactic_frontier.interference_satelite": "Interference Satelite",
       "item.galactic_frontier.titanium_pickaxe": "Titanium Pickaxe",
-      "block.galactic_frontier.mars_titanium_ore": "Mars Titanium Ore",
       "item.galactic_frontier.boreas": "Boreas Portal Igniter",
+      "block.galactic_frontier.mars_titanium_ore": "Mars Titanium Ore",
       "block.galactic_frontier.pyroxene": "Pyroxene",
       "block.galactic_frontier.frost_stone_stair": "Frost Stone",
-      "block.galactic_frontier.frosted_sand": "Frosted Sand",
       "block.galactic_frontier.frozen_dirt": "Frozen Dirt",
+      "block.galactic_frontier.frosted_sand": "Frosted Sand",
       "item.galactic_frontier.titanium_sword": "Titanium Sword"
     }
   },

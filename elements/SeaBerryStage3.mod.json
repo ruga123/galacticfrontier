@@ -11,7 +11,7 @@
     "renderType": 12,
     "customModelName": "Cross model",
     "rotationMode": 0,
-    "emissiveRendering": true,
+    "emissiveRendering": false,
     "displayFluidOverlay": true,
     "itemTexture": "seaberryitem",
     "particleTexture": "",
@@ -69,12 +69,12 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "reactionToPushing": "NORMAL",
+    "reactionToPushing": "DESTROY",
     "isNotColidable": true,
     "soundOnStep": {
       "value": "PLANT"
     },
-    "luminance": 3,
+    "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
     "spawnParticles": false,

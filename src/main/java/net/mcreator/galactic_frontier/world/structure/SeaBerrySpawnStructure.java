@@ -28,22 +28,23 @@ import net.minecraft.util.Rotation;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.Mirror;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.galactic_frontier.procedures.DryIceSpawnerOnStructureInstanceGeneratedProcedure;
+import net.mcreator.galactic_frontier.procedures.SeaBerrySpawnAdditionalGenerationConditionProcedure;
+import net.mcreator.galactic_frontier.block.FrozenDirtBlock;
+import net.mcreator.galactic_frontier.block.FrostedSandBlock;
 import net.mcreator.galactic_frontier.GalacticFrontierModElements;
 
 import java.util.Random;
-import java.util.Map;
-import java.util.HashMap;
+
+import com.google.common.collect.ImmutableMap;
 
 @GalacticFrontierModElements.ModElement.Tag
-public class DryIceSpawnerStructure extends GalacticFrontierModElements.ModElement {
+public class SeaBerrySpawnStructure extends GalacticFrontierModElements.ModElement {
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
-	public DryIceSpawnerStructure(GalacticFrontierModElements instance) {
-		super(instance, 261);
+	public SeaBerrySpawnStructure(GalacticFrontierModElements instance) {
+		super(instance, 371);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -61,43 +62,37 @@ public class DryIceSpawnerStructure extends GalacticFrontierModElements.ModEleme
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
-					if ((random.nextInt(1000000) + 1) <= 1000000) {
-						int count = random.nextInt(1) + 16;
+					if ((random.nextInt(1000000) + 1) <= 40000) {
+						int count = random.nextInt(9) + 8;
 						for (int a = 0; a < count; a++) {
 							int i = ci + random.nextInt(16);
 							int k = ck + random.nextInt(16);
-							int j = world.getHeight(Heightmap.Type.WORLD_SURFACE_WG, i, k);
+							int j = world.getHeight(Heightmap.Type.OCEAN_FLOOR_WG, i, k);
 							j -= 1;
 							BlockState blockAt = world.getBlockState(new BlockPos(i, j, k));
 							boolean blockCriteria = false;
-							if (blockAt.getBlock() == Blocks.WATER.getDefaultState().getBlock())
+							if (blockAt.getBlock() == FrostedSandBlock.block.getDefaultState().getBlock())
 								blockCriteria = true;
-							if (blockAt.getBlock() == Blocks.WATER.getDefaultState().getBlock())
+							if (blockAt.getBlock() == FrozenDirtBlock.block.getDefaultState().getBlock())
 								blockCriteria = true;
 							if (!blockCriteria)
 								continue;
-							Rotation rotation = Rotation.values()[random.nextInt(3)];
-							Mirror mirror = Mirror.values()[random.nextInt(2)];
+							Rotation rotation = Rotation.NONE;
+							Mirror mirror = Mirror.NONE;
 							BlockPos spawnTo = new BlockPos(i + 0, j + 0, k + 0);
 							int x = spawnTo.getX();
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
+							if (!SeaBerrySpawnAdditionalGenerationConditionProcedure
+									.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)))
+								continue;
 							Template template = world.getWorld().getStructureTemplateManager()
-									.getTemplateDefaulted(new ResourceLocation("galactic_frontier", "dry_ice"));
+									.getTemplateDefaulted(new ResourceLocation("galactic_frontier", "seaberryspawn"));
 							if (template == null)
 								return false;
-							template.func_237144_a_(world, spawnTo,
-									new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
-											.addProcessor(BlockIgnoreStructureProcessor.STRUCTURE_BLOCK).setChunk(null).setIgnoreEntities(false),
+							template.func_237144_a_(world, spawnTo, new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
+									.addProcessor(BlockIgnoreStructureProcessor.AIR_AND_STRUCTURE_BLOCK).setChunk(null).setIgnoreEntities(false),
 									random);
-							{
-								Map<String, Object> $_dependencies = new HashMap<>();
-								$_dependencies.put("x", x);
-								$_dependencies.put("y", y);
-								$_dependencies.put("z", z);
-								$_dependencies.put("world", world);
-								DryIceSpawnerOnStructureInstanceGeneratedProcedure.executeProcedure($_dependencies);
-							}
 						}
 					}
 					return true;
@@ -105,12 +100,17 @@ public class DryIceSpawnerStructure extends GalacticFrontierModElements.ModEleme
 			};
 			configuredFeature = feature.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG)
 					.withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG));
-			event.getRegistry().register(feature.setRegistryName("dry_ice_spawner"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("galactic_frontier:dry_ice_spawner"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("sea_berry_spawn"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("galactic_frontier:sea_berry_spawn"), configuredFeature);
 		}
 	}
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
+		boolean biomeCriteria = false;
+		if (new ResourceLocation("galactic_frontier:boreal_seas").equals(event.getName()))
+			biomeCriteria = true;
+		if (!biomeCriteria)
+			return;
 		event.getGeneration().getFeatures(GenerationStage.Decoration.SURFACE_STRUCTURES).add(() -> configuredFeature);
 	}
 }

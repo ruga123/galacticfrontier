@@ -103,7 +103,7 @@ public class BoreasDimension extends GalacticFrontierModElements.ModElement {
 		DimensionRenderInfo customEffect = new DimensionRenderInfo(Float.NaN, true, DimensionRenderInfo.FogType.NONE, false, false) {
 			@Override
 			public Vector3d func_230494_a_(Vector3d color, float sunHeight) {
-				return new Vector3d(0.058823529412, 0.058823529412, 0.172549019608);
+				return new Vector3d(0.027450980392, 0, 0.027450980392);
 			}
 
 			@Override

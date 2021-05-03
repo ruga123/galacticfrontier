@@ -62,19 +62,19 @@
       "value": ""
     },
     "offsetType": "XZ",
-    "aiPathNodeType": "DAMAGE_OTHER",
+    "aiPathNodeType": "WALKABLE",
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "reactionToPushing": "NORMAL",
+    "reactionToPushing": "DESTROY",
     "isNotColidable": true,
     "soundOnStep": {
       "value": "PLANT"
     },
-    "luminance": 3,
+    "luminance": 5,
     "unbreakable": false,
     "breakHarvestLevel": 1,
     "spawnParticles": false,
@@ -104,9 +104,10 @@
     "onRightClicked": {
       "name": "SeaberryOnBlockRightClicked"
     },
-    "spawnWorldTypes": [
-      "CUSTOM:Boreas"
-    ],
+    "onNeighbourBlockChanges": {
+      "name": "SeaBerryNewNeighbourBlockChanges"
+    },
+    "spawnWorldTypes": [],
     "restrictionBiomes": [
       {
         "value": "CUSTOM:BorealSeas"
