@@ -2,16 +2,16 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "frostmagma",
+    "texture": "deepfrostsand",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 11,
-    "customModelName": "Single texture",
+    "renderType": 10,
+    "customModelName": "Normal",
     "rotationMode": 0,
-    "emissiveRendering": true,
+    "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
@@ -32,16 +32,16 @@
         "subtract": false
       }
     ],
-    "name": "Frost Magma Block",
+    "name": "Deep Frosted Sand",
     "specialInfo": [],
-    "hardness": 1.8,
-    "resistance": 3.8,
-    "hasGravity": false,
+    "hardness": 0.29,
+    "resistance": 1.29,
+    "hasGravity": true,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:BoreasItems"
     },
-    "destroyTool": "pickaxe",
+    "destroyTool": "shovel",
     "customDrop": {
       "value": ""
     },
@@ -52,7 +52,7 @@
     "canProvidePower": false,
     "lightOpacity": 255,
     "material": {
-      "value": "ROCK"
+      "value": "SAND"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -66,20 +66,20 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
-    "slipperiness": 0.6,
+    "slipperiness": 0.75,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "SAND"
     },
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 0,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "CUSTOM:ToxicParticle"
+      "value": "EXPLOSION_NORMAL"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
@@ -101,24 +101,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onEntityWalksOn": {
-      "name": "FrostMagmaEntityWalksOnTheBlock"
-    },
-    "spawnWorldTypes": [
-      "CUSTOM:Boreas"
-    ],
+    "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "CUSTOM:FrostedSand"
-      }
-    ],
-    "frequencyPerChunks": 32,
-    "frequencyOnChunk": 14,
+    "blocksToReplace": [],
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 35,
-    "generateCondition": {
-      "name": "FrostMagmaAdditionalGenerationCondition"
-    }
+    "maxGenerateHeight": 64
   }
 }

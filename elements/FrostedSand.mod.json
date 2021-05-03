@@ -101,11 +101,21 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [],
-    "restrictionBiomes": [],
-    "blocksToReplace": [],
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
+    "spawnWorldTypes": [
+      "CUSTOM:Boreas"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:FrozenDepths"
+      }
+    ],
+    "blocksToReplace": [
+      {
+        "value": "CUSTOM:DeepFrostSand"
+      }
+    ],
+    "frequencyPerChunks": 32,
+    "frequencyOnChunk": 32,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64
   }

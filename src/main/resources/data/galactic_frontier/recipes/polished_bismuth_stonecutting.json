@@ -1,9 +1,0 @@
-{
-  "group": "bismuth",
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "galactic_frontier:bismuth"
-  },
-  "result": "galactic_frontier:polished_bismuth_block"
-}

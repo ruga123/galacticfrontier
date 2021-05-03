@@ -33,11 +33,11 @@
     },
     "rainingPossibility": 0.5,
     "temperature": 1.6,
-    "baseHeight": 0.03,
-    "heightVariation": 0.033,
+    "baseHeight": 0.014,
+    "heightVariation": 0.063,
     "biomeType": "ICY",
     "spawnBiome": false,
-    "biomeWeight": 100,
+    "biomeWeight": 500,
     "biomeDictionaryTypes": [
       "PLAINS"
     ],

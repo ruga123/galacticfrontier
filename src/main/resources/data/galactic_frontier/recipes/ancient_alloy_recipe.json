@@ -3,11 +3,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "galactic_frontier:ancient_alloy_block"
+      "item": "galactic_frontier:deleted_mod_element"
     }
   ],
   "result": {
-    "item": "galactic_frontier:ancient_alloy_ingot",
+    "item": "galactic_frontier:deleted_mod_element",
     "count": 9
   }
 }

@@ -2,1219 +2,13 @@
   "id_map": {},
   "mod_elements": [
     {
-      "name": "MarsStone",
-      "type": "block",
-      "sortid": 19,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mars_stone"
-    },
-    {
-      "name": "MarsWasteland",
-      "type": "biome",
-      "sortid": 20,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mars_wasteland"
-    },
-    {
-      "name": "Mars",
-      "type": "dimension",
-      "sortid": 20,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mars",
-      "metadata": {
-        "ep": true
-      }
-    },
-    {
-      "name": "MarsDust",
-      "type": "block",
-      "sortid": 21,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mars_dust"
-    },
-    {
-      "name": "Sand",
-      "type": "tag",
-      "sortid": 22,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sand"
-    },
-    {
-      "name": "MarsIron",
-      "type": "block",
-      "sortid": 25,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mars_iron"
-    },
-    {
-      "name": "MarsTitanium",
-      "type": "block",
-      "sortid": 26,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mars_titanium_ore"
-    },
-    {
-      "name": "RawTitanium",
-      "type": "item",
-      "sortid": 27,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "raw_titanium"
-    },
-    {
-      "name": "MarsTitaniumOre",
-      "type": "loottable",
-      "sortid": 28,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mars_titanium_ore"
-    },
-    {
-      "name": "TitaniumIngot",
-      "type": "item",
-      "sortid": 29,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "titanium_ingot"
-    },
-    {
-      "name": "TitaniumIngotRecipe",
-      "type": "recipe",
-      "sortid": 30,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "titanium_ingot_recipe"
-    },
-    {
-      "name": "TitaniumIngotRecipe2",
-      "type": "recipe",
-      "sortid": 31,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "titanium_ingot_recipe_2"
-    },
-    {
-      "name": "TitaniumIngotRecipe3",
-      "type": "recipe",
-      "sortid": 32,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "titanium_ingot_recipe_3"
-    },
-    {
-      "name": "TitaniumIngotRecipe4",
-      "type": "recipe",
-      "sortid": 33,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "titanium_ingot_recipe_4"
-    },
-    {
-      "name": "IronIngotRecipe",
-      "type": "recipe",
-      "sortid": 34,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "iron_ingot_recipe"
-    },
-    {
-      "name": "IronIngotRecipe2",
-      "type": "recipe",
-      "sortid": 35,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "iron_ingot_recipe_2"
-    },
-    {
-      "name": "TitaniumArmor",
-      "type": "armor",
-      "sortid": 36,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "titanium_armor",
-      "metadata": {
-        "eh": true,
-        "el": true,
-        "eb": true,
-        "ec": true
-      }
-    },
-    {
-      "name": "TitaniumPickaxe",
-      "type": "tool",
-      "sortid": 37,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "titanium_pickaxe"
-    },
-    {
-      "name": "TitaniumHoe",
-      "type": "tool",
-      "sortid": 38,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "titanium_hoe"
-    },
-    {
-      "name": "TitaniumSword",
-      "type": "tool",
-      "sortid": 39,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "titanium_sword"
-    },
-    {
-      "name": "TitaniumAxe",
-      "type": "tool",
-      "sortid": 40,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "titanium_axe"
-    },
-    {
-      "name": "TitaniumShovel",
-      "type": "tool",
-      "sortid": 41,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "titanium_shovel"
-    },
-    {
-      "name": "TitaniumShovelRecipe",
-      "type": "recipe",
-      "sortid": 42,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "titanium_shovel_recipe"
-    },
-    {
-      "name": "TitaniumPickaxeRecipe",
-      "type": "recipe",
-      "sortid": 43,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "titanium_pickaxe_recipe"
-    },
-    {
-      "name": "TitaniumHoeRecipe",
-      "type": "recipe",
-      "sortid": 44,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "titanium_hoe_recipe"
-    },
-    {
-      "name": "TitaniumAxeRecipe",
-      "type": "recipe",
-      "sortid": 45,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "titanium_axe_recipe"
-    },
-    {
-      "name": "TitaniumSwordRecipe",
-      "type": "recipe",
-      "sortid": 46,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "titanium_sword_recipe"
-    },
-    {
-      "name": "TitaniumHelmetRecipe",
-      "type": "recipe",
-      "sortid": 47,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "titanium_helmet_recipe"
-    },
-    {
-      "name": "TitaniumChestplateRecipe",
-      "type": "recipe",
-      "sortid": 48,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "titanium_chestplate_recipe"
-    },
-    {
-      "name": "TitaniumLeggingsRecipe",
-      "type": "recipe",
-      "sortid": 49,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "titanium_leggings_recipe"
-    },
-    {
-      "name": "TitaniumBootsRecipe",
-      "type": "recipe",
-      "sortid": 50,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "titanium_boots_recipe"
-    },
-    {
-      "name": "InterferenceSatelite",
-      "type": "block",
-      "sortid": 51,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "interference_satelite"
-    },
-    {
-      "name": "SateliteOnEntityTickUpdate",
-      "type": "procedure",
-      "sortid": 52,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "satelite_on_entity_tick_update",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Satelite",
-      "type": "mob",
-      "sortid": 52,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "satelite"
-    },
-    {
-      "name": "InterferenceSateliteBlockAdded",
-      "type": "procedure",
-      "sortid": 51,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "interference_satelite_block_added",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "SateliteRotate",
-      "type": "procedure",
-      "sortid": 53,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "satelite_rotate",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "SateliteRecipe",
-      "type": "recipe",
-      "sortid": 54,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "satelite_recipe"
-    },
-    {
-      "name": "MarsDebriAdditionalGenerationCondition",
-      "type": "procedure",
-      "sortid": 55,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mars_debri_additional_generation_condition",
-      "metadata": {
-        "return_type": "LOGIC",
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "MarsDebri",
-      "type": "block",
-      "sortid": 55,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mars_debri"
-    },
-    {
-      "name": "TitaniumBlock",
-      "type": "block",
-      "sortid": 56,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "titanium_block"
-    },
-    {
-      "name": "TitaniumBlockRecipe",
-      "type": "recipe",
-      "sortid": 57,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "titanium_block_recipe"
-    },
-    {
-      "name": "TitaniumRecipe",
-      "type": "recipe",
-      "sortid": 58,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "titanium_recipe"
-    },
-    {
-      "name": "RawTitaniumBlock",
-      "type": "block",
-      "sortid": 59,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "raw_titanium_block"
-    },
-    {
-      "name": "RawTitaniumBlockRecipe",
-      "type": "recipe",
-      "sortid": 60,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "raw_titanium_block_recipe"
-    },
-    {
-      "name": "RawTitaniumRecipe",
-      "type": "recipe",
-      "sortid": 61,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "raw_titanium_recipe"
-    },
-    {
-      "name": "RawTitaniumRecipe2",
-      "type": "recipe",
-      "sortid": 62,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "raw_titanium_recipe_2"
-    },
-    {
-      "name": "MartianIngot",
-      "type": "item",
-      "sortid": 63,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "martian_ingot"
-    },
-    {
-      "name": "MartianScrap",
-      "type": "item",
-      "sortid": 64,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "martian_scrap"
-    },
-    {
-      "name": "MartianScrapRecipe",
-      "type": "recipe",
-      "sortid": 65,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "martian_scrap_recipe"
-    },
-    {
-      "name": "MartianScrapRecipe2",
-      "type": "recipe",
-      "sortid": 66,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "martian_scrap_recipe_2"
-    },
-    {
-      "name": "MartianIngotRecipe",
-      "type": "recipe",
-      "sortid": 67,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "martian_ingot_recipe"
-    },
-    {
-      "name": "Pyroxene",
-      "type": "block",
-      "sortid": 68,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "pyroxene"
-    },
-    {
-      "name": "Stone",
-      "type": "tag",
-      "sortid": 69,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "stone"
-    },
-    {
-      "name": "PyroxeneSlab",
-      "type": "block",
-      "sortid": 70,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "pyroxene_slab"
-    },
-    {
-      "name": "PyroxeneStair",
-      "type": "block",
-      "sortid": 71,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "pyroxene_stair"
-    },
-    {
-      "name": "PyroxeneWall",
-      "type": "block",
-      "sortid": 72,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "pyroxene_wall"
-    },
-    {
-      "name": "MarsStoneSlab",
-      "type": "block",
-      "sortid": 73,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mars_stone_slab"
-    },
-    {
-      "name": "MarsStoneStair",
-      "type": "block",
-      "sortid": 74,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mars_stone_stair"
-    },
-    {
-      "name": "MarsStoneWall",
-      "type": "block",
-      "sortid": 75,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mars_stone_wall"
-    },
-    {
-      "name": "PyroxeneSlabRecipe",
-      "type": "recipe",
-      "sortid": 76,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "pyroxene_slab_recipe"
-    },
-    {
-      "name": "PyroxeneWallRecipe",
-      "type": "recipe",
-      "sortid": 77,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "pyroxene_wall_recipe"
-    },
-    {
-      "name": "PyroxeneStairRecipe",
-      "type": "recipe",
-      "sortid": 78,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "pyroxene_stair_recipe"
-    },
-    {
-      "name": "PyroxeneSlabRecipe3",
-      "type": "recipe",
-      "sortid": 80,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "pyroxene_slab_recipe_3"
-    },
-    {
-      "name": "PyroxeneStairRecipe2",
-      "type": "recipe",
-      "sortid": 81,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "pyroxene_stair_recipe_2"
-    },
-    {
-      "name": "PyroxeneWallRecipe2",
-      "type": "recipe",
-      "sortid": 82,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "pyroxene_wall_recipe_2"
-    },
-    {
-      "name": "PyroxeneStairRecipe3",
-      "type": "recipe",
-      "sortid": 83,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "pyroxene_stair_recipe_3"
-    },
-    {
-      "name": "MarsStoneSlabRecipe",
-      "type": "recipe",
-      "sortid": 84,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mars_stone_slab_recipe"
-    },
-    {
-      "name": "MarsStoneWallRecipe",
-      "type": "recipe",
-      "sortid": 85,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mars_stone_wall_recipe"
-    },
-    {
-      "name": "MarsStoneStairRecipe",
-      "type": "recipe",
-      "sortid": 86,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mars_stone_stair_recipe"
-    },
-    {
-      "name": "MarsStoneStairRecipe2",
-      "type": "recipe",
-      "sortid": 87,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mars_stone_stair_recipe_2"
-    },
-    {
-      "name": "MarsStoneStairRecipe3",
-      "type": "recipe",
-      "sortid": 88,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mars_stone_stair_recipe_3"
-    },
-    {
-      "name": "MarsStoneSlabRecipe2",
-      "type": "recipe",
-      "sortid": 89,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mars_stone_slab_recipe_2"
-    },
-    {
-      "name": "MarsStoneWallRecipe2",
-      "type": "recipe",
-      "sortid": 90,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mars_stone_wall_recipe_2"
-    },
-    {
-      "name": "MarsFurnaceRecipe",
-      "type": "recipe",
-      "sortid": 91,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mars_furnace_recipe"
-    },
-    {
-      "name": "MarsCoalOre",
-      "type": "loottable",
-      "sortid": 92,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mars_coal_ore"
-    },
-    {
-      "name": "MarsCoal",
-      "type": "block",
-      "sortid": 93,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mars_coal_ore"
-    },
-    {
-      "name": "Bismuth",
-      "type": "loottable",
-      "sortid": 94,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bismuth"
-    },
-    {
-      "name": "BismuthBlock",
-      "type": "block",
-      "sortid": 95,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bismuth"
-    },
-    {
-      "name": "BismuthCrystal",
-      "type": "item",
-      "sortid": 96,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bismuth_crystal"
-    },
-    {
-      "name": "PolishedBismuthBlock",
-      "type": "block",
-      "sortid": 97,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "polished_bismuth_block"
-    },
-    {
-      "name": "PolishedBismuth",
-      "type": "recipe",
-      "sortid": 98,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "polished_bismuth"
-    },
-    {
-      "name": "PolishedBismuthSmeltingRecipe",
-      "type": "recipe",
-      "sortid": 99,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "polished_bismuth_smelting_recipe"
-    },
-    {
-      "name": "PolishedBismuthStonecutting",
-      "type": "recipe",
-      "sortid": 100,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "polished_bismuth_stonecutting"
-    },
-    {
-      "name": "BismuthBlockRecipe",
-      "type": "recipe",
-      "sortid": 101,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bismuth_block_recipe"
-    },
-    {
-      "name": "AlloyTank",
-      "type": "block",
-      "sortid": 102,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "alloy_tank"
-    },
-    {
-      "name": "AlloyTankGui",
-      "type": "gui",
-      "sortid": 103,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "alloy_tank_gui"
-    },
-    {
-      "name": "TemperedNetheriteIngot",
-      "type": "item",
-      "sortid": 104,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tempered_netherite_ingot"
-    },
-    {
-      "name": "AlloyTankUpdateTick",
-      "type": "procedure",
-      "sortid": 104,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "alloy_tank_update_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "AncientAlloyIngot",
-      "type": "item",
-      "sortid": 105,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ancient_alloy_ingot"
-    },
-    {
-      "name": "MartianBarrens",
-      "type": "biome",
-      "sortid": 106,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "martian_barrens"
-    },
-    {
-      "name": "BismuthOre",
-      "type": "loottable",
-      "sortid": 107,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bismuth_ore"
-    },
-    {
-      "name": "MarsBismuthOre",
-      "type": "block",
-      "sortid": 108,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bismuth_ore"
-    },
-    {
-      "name": "MarsAmethystOre",
-      "type": "block",
-      "sortid": 109,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "amethyst_ore"
-    },
-    {
-      "name": "Amethyst",
-      "type": "item",
-      "sortid": 110,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "amethyst"
-    },
-    {
-      "name": "AmethystOre",
-      "type": "loottable",
-      "sortid": 111,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "amethyst_ore"
-    },
-    {
-      "name": "MartianItems",
-      "type": "tab",
-      "sortid": 112,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "martian_items"
-    },
-    {
-      "name": "Alloys",
-      "type": "tab",
-      "sortid": 113,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "alloys"
-    },
-    {
-      "name": "MartianOpal",
-      "type": "item",
-      "sortid": 114,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "martian_opal"
-    },
-    {
-      "name": "AmethystBlock",
-      "type": "block",
-      "sortid": 115,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "amethyst_block"
-    },
-    {
-      "name": "OpalBlock",
-      "type": "block",
-      "sortid": 116,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "opal_block"
-    },
-    {
-      "name": "AmethystBlockRecipe",
-      "type": "recipe",
-      "sortid": 117,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "amethyst_block_recipe"
-    },
-    {
-      "name": "BismuthCrystalRecipe",
-      "type": "recipe",
-      "sortid": 118,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bismuth_crystal_recipe"
-    },
-    {
-      "name": "BismuthCrystalRecipe2",
-      "type": "recipe",
-      "sortid": 119,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bismuth_crystal_recipe_2"
-    },
-    {
-      "name": "AmethystRecipe",
-      "type": "recipe",
-      "sortid": 120,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "amethyst_recipe"
-    },
-    {
-      "name": "AmethystRecipe2",
-      "type": "recipe",
-      "sortid": 121,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "amethyst_recipe_2"
-    },
-    {
-      "name": "AmethystRecipe3",
-      "type": "recipe",
-      "sortid": 122,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "amethyst_recipe_3"
-    },
-    {
-      "name": "OpalBlockRecipe",
-      "type": "recipe",
-      "sortid": 123,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "opal_block_recipe"
-    },
-    {
-      "name": "OpalRecipe",
-      "type": "recipe",
-      "sortid": 124,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "opal_recipe"
-    },
-    {
-      "name": "MartianPickaxe",
-      "type": "tool",
-      "sortid": 125,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "martian_pickaxe"
-    },
-    {
-      "name": "MartianAxe",
-      "type": "tool",
-      "sortid": 126,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "martian_axe"
-    },
-    {
-      "name": "MartianSword",
-      "type": "tool",
-      "sortid": 127,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "martian_sword"
-    },
-    {
-      "name": "MartianShovel",
-      "type": "tool",
-      "sortid": 128,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "martian_shovel"
-    },
-    {
-      "name": "MartianHoe",
-      "type": "tool",
-      "sortid": 129,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "martian_hoe"
-    },
-    {
-      "name": "MartianPickaxeRecipe",
-      "type": "recipe",
-      "sortid": 130,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "martian_pickaxe_recipe"
-    },
-    {
-      "name": "MartianAxeRecipe",
-      "type": "recipe",
-      "sortid": 131,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "martian_axe_recipe"
-    },
-    {
-      "name": "MartianSwordRecipe",
-      "type": "recipe",
-      "sortid": 132,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "martian_sword_recipe"
-    },
-    {
-      "name": "MartianShovelRecipe",
-      "type": "recipe",
-      "sortid": 133,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "martian_shovel_recipe"
-    },
-    {
-      "name": "MartianHoeRecipe",
-      "type": "recipe",
-      "sortid": 134,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "martian_hoe_recipe"
-    },
-    {
-      "name": "AncientAlloyBlock",
-      "type": "block",
-      "sortid": 135,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ancient_alloy_block"
-    },
-    {
-      "name": "MartianOpalToolInInventoryTick",
-      "type": "procedure",
-      "sortid": 136,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "martian_opal_tool_in_inventory_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      }
-    },
-    {
       "name": "FrostStone",
       "type": "block",
       "sortid": 137,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "frost_stone_loot"
+      "registry_name": "frost_stone_block"
     },
     {
       "name": "BoreasItems",
@@ -1233,15 +27,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "cobbled_froststone"
-    },
-    {
-      "name": "FrostStoneLoot",
-      "type": "loottable",
-      "sortid": 140,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "frost_stone_loot"
     },
     {
       "name": "BorealSeas",
@@ -1568,8 +353,7 @@
             "type": "world"
           }
         ]
-      },
-      "path": "~/DryIceSpawner"
+      }
     },
     {
       "name": "CobbledFroststoneSlab",
@@ -1907,15 +691,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "deep_slime_ball"
-    },
-    {
-      "name": "AlloyTankRecipe",
-      "type": "recipe",
-      "sortid": 352,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "alloy_tank_recipe"
     },
     {
       "name": "SeaThraxOnBlockRightClicked",
@@ -2379,6 +1154,72 @@
           }
         ]
       }
+    },
+    {
+      "name": "FrostStoneBlock",
+      "type": "loottable",
+      "sortid": 375,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "frost_stone_block"
+    },
+    {
+      "name": "Puriane",
+      "type": "block",
+      "sortid": 376,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "puriane"
+    },
+    {
+      "name": "FrozenDepths",
+      "type": "biome",
+      "sortid": 377,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "frozen_depths"
+    },
+    {
+      "name": "DeepFrostSand",
+      "type": "block",
+      "sortid": 378,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "deep_frost_sand"
+    },
+    {
+      "name": "SeaThraxSpawnAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 379,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sea_thrax_spawn_additional_generation_condition",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2392,56 +1233,23 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.galactic_frontier.mars_stone": "Mars Stone",
-      "block.galactic_frontier.bismuth_ore": "Mars Bismuth Ore",
       "biome.galactic_frontier.boreal_seas": "Boreal Seas",
       "death.attack.endmatter": "%1$s was molten in end matter",
-      "item.galactic_frontier.titanium_armor_helmet": "Titanium Helmet",
-      "itemGroup.taballoys": "Alloys",
-      "block.galactic_frontier.alloy_tank": "Alloy Tank",
-      "item.galactic_frontier.martian_shovel": "Martian Opal Shovel",
-      "item.galactic_frontier.titanium_axe": "Titanium Axe",
       "item.galactic_frontier.sea_berry_item": "Sea Berries",
-      "block.galactic_frontier.titanium_block": "Titanium Block",
-      "block.galactic_frontier.opal_block": "Martian Opal Block",
-      "block.galactic_frontier.bismuth": "Bismuth Block",
       "block.galactic_frontier.sea_thrax": "Sea Thrax",
-      "item.galactic_frontier.satelite_spawn_egg": "Satelite Spawn Egg",
-      "block.galactic_frontier.amethyst_block": "Amethyst Block",
       "item.minecraft.potion.effect.toxic": "Toxic",
-      "itemGroup.tabmartian_items": "Martian Items",
       "block.galactic_frontier.frost_stone_slab": "Frost Stone",
-      "block.galactic_frontier.mars_coal_ore": "Mars Coal Ore",
-      "block.galactic_frontier.mars_debri": "Martian Dust",
       "item.minecraft.lingering_potion.effect.toxic": "Lingering Toxic",
-      "item.galactic_frontier.amethyst": "Amethyst",
-      "block.galactic_frontier.mars_iron": "Mars Iron Ore",
       "item.minecraft.tipped_arrow.effect.toxic": "Arrow of Toxic",
       "block.galactic_frontier.cobbled_froststone": "Cobbled Frost Stone",
       "block.galactic_frontier.cobbled_froststone_slab": "Cobbled Frost Stone Slab",
-      "item.galactic_frontier.martian_hoe": "Martian Opal Hoe",
       "item.galactic_frontier.deep_slime_ball": "Deep Slime Ball",
-      "block.galactic_frontier.mars_stone_stair": "Mars Stone Stairs",
-      "block.galactic_frontier.mars_stone_slab": "Mars Stone Slab",
-      "block.galactic_frontier.raw_titanium_block": "Raw Titanium Block",
       "death.attack.toxic": "%1$s died of poison",
-      "item.galactic_frontier.bismuth_crystal": "Bismuth Crystal",
-      "item.galactic_frontier.titanium_ingot": "Titanium Ingot",
+      "block.galactic_frontier.deep_frost_sand": "Deep Frosted Sand",
+      "block.galactic_frontier.frost_stone_block": "Frost Stone",
       "block.galactic_frontier.seaberry_stage_2": "Seaberry",
-      "item.galactic_frontier.martian_pickaxe": "Martian Opal Pickaxe",
-      "block.galactic_frontier.pyroxene_wall": "Pyroxene Wall",
-      "block.galactic_frontier.ancient_alloy_block": "§eAncient Alloy Block",
-      "item.galactic_frontier.martian_sword": "Martian Opal Sword",
-      "biome.galactic_frontier.mars_wasteland": "Mars Wasteland",
-      "block.galactic_frontier.mars_dust": "Mars Dust",
-      "block.galactic_frontier.pyroxene_stair": "Pyroxene Stairs",
-      "block.galactic_frontier.mars_stone_wall": "Mars Stone Wall",
+      "biome.galactic_frontier.frozen_depths": "Frozen Depths",
       "block.galactic_frontier.frost_stone_wall": "Frost Stone",
-      "item.galactic_frontier.mars": "Mars Portal Igniter",
-      "entity.galactic_frontier.satelite": "Satelite",
-      "item.galactic_frontier.titanium_armor_leggings": "Titanium Leggings",
-      "item.galactic_frontier.raw_titanium": "Raw Titanium",
-      "item.galactic_frontier.martian_opal": "Martian Opal",
       "entity.galactic_frontier.deep_slime": "Deep Slime",
       "block.galactic_frontier.sea_berry_new": "Seaberry",
       "block.galactic_frontier.sea_berry_stage_3": "Seaberry",
@@ -2449,47 +1257,24 @@
       "block.galactic_frontier.sea_berry_ripe": "Seaberry",
       "block.galactic_frontier.cobbled_froststone_wall": "Cobbled Frost Stone Slab",
       "block.galactic_frontier.frost_magma": "Frost Magma Block",
-      "item.galactic_frontier.titanium_shovel": "Titanium Shovel",
-      "item.galactic_frontier.titanium_hoe": "Titanium Hoe",
       "block.galactic_frontier.sea_thrax_stack": "Sea Thrax",
-      "block.galactic_frontier.pyroxene_slab": "Pyroxene Slab",
       "block.galactic_frontier.cobbled_froststone_stair": "Cobbled Frost Stone Slab",
-      "block.galactic_frontier.polished_bismuth_block": "Polished Bismuth Block",
-      "block.galactic_frontier.frost_stone_loot": "Frost Stone",
       "block.galactic_frontier.dry_ice": "Dry Ice",
       "item.galactic_frontier.deep_slime_spawn_egg": "Deep Slime Spawn Egg",
-      "biome.galactic_frontier.martian_barrens": "Martian Barrens",
       "itemGroup.tabboreas_items": "Boreas Items",
-      "block.galactic_frontier.amethyst_ore": "Mars Amethyst Ore",
       "effect.toxic": "Toxic",
-      "item.galactic_frontier.tempered_netherite_ingot": "Tempered Netherite Ingot",
-      "item.galactic_frontier.martian_ingot": "Martian Ingot",
-      "item.galactic_frontier.martian_axe": "Martian Opal Axe",
-      "item.galactic_frontier.martian_scrap": "Martian Scrap",
-      "item.galactic_frontier.ancient_alloy_ingot": "Ancient Alloy Ingot",
-      "item.galactic_frontier.titanium_armor_boots": "Titanium Boots",
       "biome.galactic_frontier.boreal_plains": "Boreal Plains",
       "item.minecraft.splash_potion.effect.toxic": "Splash Toxic",
-      "item.galactic_frontier.titanium_armor_chestplate": "Titanium Chestplate",
-      "block.galactic_frontier.interference_satelite": "Interference Satelite",
-      "item.galactic_frontier.titanium_pickaxe": "Titanium Pickaxe",
       "item.galactic_frontier.boreas": "Boreas Portal Igniter",
-      "block.galactic_frontier.mars_titanium_ore": "Mars Titanium Ore",
-      "block.galactic_frontier.pyroxene": "Pyroxene",
+      "block.galactic_frontier.puriane": "Puriane",
       "block.galactic_frontier.frost_stone_stair": "Frost Stone",
       "block.galactic_frontier.frozen_dirt": "Frozen Dirt",
-      "block.galactic_frontier.frosted_sand": "Frosted Sand",
-      "item.galactic_frontier.titanium_sword": "Titanium Sword"
+      "block.galactic_frontier.frosted_sand": "Frosted Sand"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": [
-      {
-        "name": "DryIceSpawner",
-        "children": []
-      }
-    ]
+    "children": []
   },
   "workspaceSettings": {
     "modid": "galactic_frontier",

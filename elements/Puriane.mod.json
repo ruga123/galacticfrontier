@@ -2,7 +2,7 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "frostmagma",
+    "texture": "puriane",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -11,7 +11,7 @@
     "renderType": 11,
     "customModelName": "Single texture",
     "rotationMode": 0,
-    "emissiveRendering": true,
+    "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
@@ -32,10 +32,10 @@
         "subtract": false
       }
     ],
-    "name": "Frost Magma Block",
+    "name": "Puriane",
     "specialInfo": [],
-    "hardness": 1.8,
-    "resistance": 3.8,
+    "hardness": 3.6,
+    "resistance": 4.8,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -79,7 +79,7 @@
     "breakHarvestLevel": 0,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "CUSTOM:ToxicParticle"
+      "value": "EXPLOSION_NORMAL"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
@@ -101,24 +101,24 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onEntityWalksOn": {
-      "name": "FrostMagmaEntityWalksOnTheBlock"
-    },
     "spawnWorldTypes": [
       "CUSTOM:Boreas"
     ],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "CUSTOM:FrostedSand"
+        "value": "CUSTOM:FrostStone"
+      },
+      {
+        "value": "CUSTOM:CobbledFroststone"
+      },
+      {
+        "value": "CUSTOM:DeepFrostSand"
       }
     ],
-    "frequencyPerChunks": 32,
-    "frequencyOnChunk": 14,
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 35,
-    "generateCondition": {
-      "name": "FrostMagmaAdditionalGenerationCondition"
-    }
+    "maxGenerateHeight": 64
   }
 }

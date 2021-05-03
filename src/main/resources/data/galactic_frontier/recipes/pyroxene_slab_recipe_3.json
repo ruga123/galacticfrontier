@@ -1,9 +1,0 @@
-{
-  "group": "pyroxene",
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "galactic_frontier:pyroxene"
-  },
-  "result": "galactic_frontier:pyroxene_slab"
-}

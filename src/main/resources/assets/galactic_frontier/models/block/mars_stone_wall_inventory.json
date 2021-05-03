@@ -1,7 +1,0 @@
-{
-  "parent": "block/wall_inventory",
-  "textures": {
-    "wall": "galactic_frontier:blocks/martianstone",
-    "particle": "galactic_frontier:blocks/martianstone"
-  }
-}

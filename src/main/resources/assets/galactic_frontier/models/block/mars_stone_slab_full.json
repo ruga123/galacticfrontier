@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_bottom_top",
-  "textures": {
-    "bottom": "galactic_frontier:blocks/martianstone",
-    "top": "galactic_frontier:blocks/martianstone",
-    "side": "galactic_frontier:blocks/martianstone"
-  }
-}

@@ -8,35 +8,35 @@
   ],
   "key": {
     "0": {
-      "item": "galactic_frontier:ancient_alloy_ingot"
+      "item": "galactic_frontier:deleted_mod_element"
     },
     "1": {
-      "item": "galactic_frontier:ancient_alloy_ingot"
+      "item": "galactic_frontier:deleted_mod_element"
     },
     "2": {
-      "item": "galactic_frontier:ancient_alloy_ingot"
+      "item": "galactic_frontier:deleted_mod_element"
     },
     "3": {
-      "item": "galactic_frontier:ancient_alloy_ingot"
+      "item": "galactic_frontier:deleted_mod_element"
     },
     "4": {
-      "item": "galactic_frontier:ancient_alloy_ingot"
+      "item": "galactic_frontier:deleted_mod_element"
     },
     "5": {
-      "item": "galactic_frontier:ancient_alloy_ingot"
+      "item": "galactic_frontier:deleted_mod_element"
     },
     "6": {
-      "item": "galactic_frontier:ancient_alloy_ingot"
+      "item": "galactic_frontier:deleted_mod_element"
     },
     "7": {
-      "item": "galactic_frontier:ancient_alloy_ingot"
+      "item": "galactic_frontier:deleted_mod_element"
     },
     "8": {
-      "item": "galactic_frontier:ancient_alloy_ingot"
+      "item": "galactic_frontier:deleted_mod_element"
     }
   },
   "result": {
-    "item": "galactic_frontier:ancient_alloy_block",
+    "item": "galactic_frontier:deleted_mod_element",
     "count": 1
   }
 }

@@ -83,6 +83,8 @@ public class DeepSlimeEntity extends GalacticFrontierModElements.ModElement {
 		boolean biomeCriteria = false;
 		if (new ResourceLocation("galactic_frontier:boreal_seas").equals(event.getName()))
 			biomeCriteria = true;
+		if (new ResourceLocation("galactic_frontier:frozen_depths").equals(event.getName()))
+			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
 		event.getSpawns().getSpawner(EntityClassification.WATER_CREATURE).add(new MobSpawnInfo.Spawners(entity, 180, 1, 1));

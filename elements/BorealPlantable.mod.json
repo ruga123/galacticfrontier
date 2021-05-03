@@ -10,6 +10,9 @@
       },
       {
         "value": "CUSTOM:FrozenDirt"
+      },
+      {
+        "value": "CUSTOM:DeepFrostSand"
       }
     ],
     "functions": [],

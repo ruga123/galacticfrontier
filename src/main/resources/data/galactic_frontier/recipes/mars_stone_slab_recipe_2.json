@@ -1,9 +1,0 @@
-{
-  "group": "marsstone",
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "galactic_frontier:mars_stone"
-  },
-  "result": "galactic_frontier:mars_stone_slab"
-}

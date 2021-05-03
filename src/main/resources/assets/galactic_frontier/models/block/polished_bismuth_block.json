@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "galactic_frontier:blocks/polishedbismuth",
-    "particle": "galactic_frontier:blocks/polishedbismuth"
-  }
-}

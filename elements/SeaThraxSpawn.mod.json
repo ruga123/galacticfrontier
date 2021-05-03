@@ -26,6 +26,9 @@
       }
     ],
     "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK",
+    "generateCondition": {
+      "name": "SeaThraxSpawnAdditionalGenerationCondition"
+    },
     "onStructureGenerated": {
       "name": "SeaThraxSpawnOnStructureInstanceGenerated"
     }

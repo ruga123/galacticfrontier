@@ -31,12 +31,15 @@ import net.minecraft.util.Mirror;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.galactic_frontier.procedures.SeaThraxSpawnOnStructureInstanceGeneratedProcedure;
+import net.mcreator.galactic_frontier.procedures.SeaThraxSpawnAdditionalGenerationConditionProcedure;
 import net.mcreator.galactic_frontier.block.FrostedSandBlock;
 import net.mcreator.galactic_frontier.GalacticFrontierModElements;
 
 import java.util.Random;
 import java.util.Map;
 import java.util.HashMap;
+
+import com.google.common.collect.ImmutableMap;
 
 @GalacticFrontierModElements.ModElement.Tag
 public class SeaThraxSpawnStructure extends GalacticFrontierModElements.ModElement {
@@ -80,6 +83,9 @@ public class SeaThraxSpawnStructure extends GalacticFrontierModElements.ModEleme
 							int x = spawnTo.getX();
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
+							if (!SeaThraxSpawnAdditionalGenerationConditionProcedure
+									.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)))
+								continue;
 							Template template = world.getWorld().getStructureTemplateManager()
 									.getTemplateDefaulted(new ResourceLocation("galactic_frontier", "seathrax"));
 							if (template == null)

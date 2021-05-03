@@ -6,16 +6,13 @@
     "items": [],
     "blocks": [
       {
-        "value": "CUSTOM:MarsDust"
-      },
-      {
         "value": "CUSTOM:FrostedSand"
       },
       {
         "value": "CUSTOM:FrostedSand"
       },
       {
-        "value": "Blocks.SAND#0"
+        "value": "CUSTOM:DeepFrostSand"
       }
     ],
     "functions": [],

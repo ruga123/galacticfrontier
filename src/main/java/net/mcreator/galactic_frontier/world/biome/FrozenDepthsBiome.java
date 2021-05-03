@@ -24,14 +24,14 @@ import net.minecraft.util.RegistryKey;
 import net.minecraft.entity.EntityClassification;
 
 import net.mcreator.galactic_frontier.entity.DeepSlimeEntity;
-import net.mcreator.galactic_frontier.block.FrostedSandBlock;
+import net.mcreator.galactic_frontier.block.DeepFrostSandBlock;
 import net.mcreator.galactic_frontier.GalacticFrontierModElements;
 
 @GalacticFrontierModElements.ModElement.Tag
-public class BorealSeasBiome extends GalacticFrontierModElements.ModElement {
+public class FrozenDepthsBiome extends GalacticFrontierModElements.ModElement {
 	public static Biome biome;
-	public BorealSeasBiome(GalacticFrontierModElements instance) {
-		super(instance, 141);
+	public FrozenDepthsBiome(GalacticFrontierModElements instance) {
+		super(instance, 377);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {
@@ -46,17 +46,17 @@ public class BorealSeasBiome extends GalacticFrontierModElements.ModElement {
 								.getValue(new ResourceLocation("ambient.underwater.loop.additions.rare")), 0.0111D))
 						.build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
-						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(FrostedSandBlock.block.getDefaultState(),
-								FrostedSandBlock.block.getDefaultState(), FrostedSandBlock.block.getDefaultState())));
+						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(DeepFrostSandBlock.block.getDefaultState(),
+								DeepFrostSandBlock.block.getDefaultState(), DeepFrostSandBlock.block.getDefaultState())));
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
 				DefaultBiomeFeatures.withFossils(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				mobSpawnInfo.withSpawner(EntityClassification.WATER_CREATURE, new MobSpawnInfo.Spawners(DeepSlimeEntity.entity, 20, 1, 4));
-				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.OCEAN).depth(-1.48f).scale(0.13f)
+				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.OCEAN).depth(-1.923f).scale(0.31f)
 						.temperature(0f).downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
-				event.getRegistry().register(biome.setRegistryName("galactic_frontier:boreal_seas"));
+				event.getRegistry().register(biome.setRegistryName("galactic_frontier:frozen_depths"));
 			}
 		}
 	}

@@ -81,7 +81,8 @@ public class SeaThraxPlacedProcedure extends GalacticFrontierModElements.ModElem
 								new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
 						"setblock ~ ~ ~ galactic_frontier:sea_thrax_stack[waterlogged=true] replace");
 			}
-		} else if ((!(BlockTags.getCollection().getTagByID(new ResourceLocation(("forge:sand").toLowerCase(java.util.Locale.ENGLISH)))
+		} else if ((!(BlockTags.getCollection()
+				.getTagByID(new ResourceLocation(("galactic_frontier:boreal_plantable").toLowerCase(java.util.Locale.ENGLISH)))
 				.contains((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock())))) {
 			((itemstack)).grow((int) 1);
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);

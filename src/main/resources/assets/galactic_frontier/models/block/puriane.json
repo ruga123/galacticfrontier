@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "galactic_frontier:blocks/puriane",
+    "particle": "galactic_frontier:blocks/puriane"
+  }
+}

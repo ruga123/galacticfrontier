@@ -1,8 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "galactic_frontier:blocks/martianstone",
-    "top": "galactic_frontier:blocks/martianstone",
-    "side": "galactic_frontier:blocks/martianstone"
-  }
-}

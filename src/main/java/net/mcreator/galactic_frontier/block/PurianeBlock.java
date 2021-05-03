@@ -28,31 +28,24 @@ import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
-import net.minecraft.entity.Entity;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.galactic_frontier.procedures.FrostMagmaEntityWalksOnTheBlockProcedure;
-import net.mcreator.galactic_frontier.procedures.FrostMagmaAdditionalGenerationConditionProcedure;
 import net.mcreator.galactic_frontier.itemgroup.BoreasItemsItemGroup;
 import net.mcreator.galactic_frontier.GalacticFrontierModElements;
 
 import java.util.Random;
-import java.util.Map;
 import java.util.List;
-import java.util.HashMap;
 import java.util.Collections;
 
-import com.google.common.collect.ImmutableMap;
-
 @GalacticFrontierModElements.ModElement.Tag
-public class FrostMagmaBlock extends GalacticFrontierModElements.ModElement {
-	@ObjectHolder("galactic_frontier:frost_magma")
+public class PurianeBlock extends GalacticFrontierModElements.ModElement {
+	@ObjectHolder("galactic_frontier:puriane")
 	public static final Block block = null;
-	public FrostMagmaBlock(GalacticFrontierModElements instance) {
-		super(instance, 373);
+	public PurianeBlock(GalacticFrontierModElements instance) {
+		super(instance, 376);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -65,10 +58,9 @@ public class FrostMagmaBlock extends GalacticFrontierModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.8f, 3.8f).setLightLevel(s -> 0)
-					.harvestLevel(0).harvestTool(ToolType.PICKAXE).setRequiresTool().setNeedsPostProcessing((bs, br, bp) -> true)
-					.setEmmisiveRendering((bs, br, bp) -> true));
-			setRegistryName("frost_magma");
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(3.6f, 4.8f).setLightLevel(s -> 0)
+					.harvestLevel(0).harvestTool(ToolType.PICKAXE).setRequiresTool());
+			setRegistryName("puriane");
 		}
 
 		@Override
@@ -77,19 +69,6 @@ public class FrostMagmaBlock extends GalacticFrontierModElements.ModElement {
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
-		}
-
-		@Override
-		public void onEntityWalk(World world, BlockPos pos, Entity entity) {
-			super.onEntityWalk(world, pos, entity);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				FrostMagmaEntityWalksOnTheBlockProcedure.executeProcedure($_dependencies);
-			}
 		}
 	}
 	private static Feature<OreFeatureConfig> feature = null;
@@ -100,7 +79,11 @@ public class FrostMagmaBlock extends GalacticFrontierModElements.ModElement {
 		static final com.mojang.serialization.Codec<CustomRuleTest> codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
 		public boolean test(BlockState blockAt, Random random) {
 			boolean blockCriteria = false;
-			if (blockAt.getBlock() == FrostedSandBlock.block.getDefaultState().getBlock())
+			if (blockAt.getBlock() == FrostStoneBlock.block.getDefaultState().getBlock())
+				blockCriteria = true;
+			if (blockAt.getBlock() == CobbledFroststoneBlock.block.getDefaultState().getBlock())
+				blockCriteria = true;
+			if (blockAt.getBlock() == DeepFrostSandBlock.block.getDefaultState().getBlock())
 				blockCriteria = true;
 			return blockCriteria;
 		}
@@ -113,8 +96,7 @@ public class FrostMagmaBlock extends GalacticFrontierModElements.ModElement {
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
 		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
-			CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("galactic_frontier:frost_magma_match"),
-					() -> CustomRuleTest.codec);
+			CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("galactic_frontier:puriane_match"), () -> CustomRuleTest.codec);
 			feature = new OreFeature(OreFeatureConfig.CODEC) {
 				@Override
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
@@ -124,18 +106,13 @@ public class FrostMagmaBlock extends GalacticFrontierModElements.ModElement {
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
-					int x = pos.getX();
-					int y = pos.getY();
-					int z = pos.getZ();
-					if (!FrostMagmaAdditionalGenerationConditionProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)))
-						return false;
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 14)).range(35)
-					.square().func_242731_b(32);
-			event.getRegistry().register(feature.setRegistryName("frost_magma"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("galactic_frontier:frost_magma"), configuredFeature);
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 16)).range(64)
+					.square().func_242731_b(10);
+			event.getRegistry().register(feature.setRegistryName("puriane"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("galactic_frontier:puriane"), configuredFeature);
 		}
 	}
 	@SubscribeEvent

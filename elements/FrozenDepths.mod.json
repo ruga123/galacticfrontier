@@ -2,12 +2,12 @@
   "_fv": 18,
   "_type": "biome",
   "definition": {
-    "name": "Boreal Seas",
+    "name": "Frozen Depths",
     "groundBlock": {
-      "value": "CUSTOM:FrostedSand"
+      "value": "CUSTOM:DeepFrostSand"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:FrostedSand"
+      "value": "CUSTOM:DeepFrostSand"
     },
     "ambientSound": {
       "value": ""
@@ -29,15 +29,15 @@
     "particlesProbability": 0.5,
     "biomeCategory": "OCEAN",
     "parent": {
-      "value": "cold_ocean"
+      "value": "deep_cold_ocean"
     },
     "rainingPossibility": 0.0,
     "temperature": 0.0,
-    "baseHeight": -1.48,
-    "heightVariation": 0.13,
+    "baseHeight": -1.923,
+    "heightVariation": 0.31,
     "biomeType": "ICY",
     "spawnBiome": false,
-    "biomeWeight": 800,
+    "biomeWeight": 3,
     "biomeDictionaryTypes": [
       "COLD",
       "WET"

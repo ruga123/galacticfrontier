@@ -6,13 +6,13 @@
   ],
   "key": {
     "0": {
-      "item": "galactic_frontier:frost_stone_loot"
+      "item": "galactic_frontier:frost_stone_block"
     },
     "1": {
-      "item": "galactic_frontier:frost_stone_loot"
+      "item": "galactic_frontier:frost_stone_block"
     },
     "2": {
-      "item": "galactic_frontier:frost_stone_loot"
+      "item": "galactic_frontier:frost_stone_block"
     }
   },
   "result": {

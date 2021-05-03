@@ -54,7 +54,6 @@ import net.minecraft.block.Block;
 import net.minecraft.block.AbstractBlock;
 
 import net.mcreator.galactic_frontier.item.BoreasItem;
-import net.mcreator.galactic_frontier.block.PolishedBismuthBlockBlock;
 import net.mcreator.galactic_frontier.block.FrostStoneBlock;
 import net.mcreator.galactic_frontier.GalacticFrontierModElements;
 
@@ -227,7 +226,7 @@ public class BoreasDimension extends GalacticFrontierModElements.ModElement {
 
 	public static class CustomPortalSize {
 		private static final AbstractBlock.IPositionPredicate POSITION_PREDICATE = (state, blockReader, pos) -> {
-			return state.getBlock() == PolishedBismuthBlockBlock.block.getDefaultState().getBlock();
+			return state.getBlock() == FrostStoneBlock.block.getDefaultState().getBlock();
 		};
 		private final IWorld world;
 		private final Direction.Axis axis;
@@ -498,7 +497,7 @@ public class BoreasDimension extends GalacticFrontierModElements.ModElement {
 					for (int k2 = 0; k2 < 2; ++k2) {
 						for (int i3 = -1; i3 < 3; ++i3) {
 							BlockState blockstate1 = i3 < 0
-									? PolishedBismuthBlockBlock.block.getDefaultState().getBlock().getDefaultState()
+									? FrostStoneBlock.block.getDefaultState().getBlock().getDefaultState()
 									: Blocks.AIR.getDefaultState();
 							blockpos$mutable.setAndOffset(blockpos, k2 * direction.getXOffset() + l1 * direction1.getXOffset(), i3,
 									k2 * direction.getZOffset() + l1 * direction1.getZOffset());
@@ -511,7 +510,7 @@ public class BoreasDimension extends GalacticFrontierModElements.ModElement {
 				for (int i2 = -1; i2 < 4; ++i2) {
 					if (k1 == -1 || k1 == 2 || i2 == -1 || i2 == 3) {
 						blockpos$mutable.setAndOffset(blockpos, k1 * direction.getXOffset(), i2, k1 * direction.getZOffset());
-						this.world.setBlockState(blockpos$mutable, PolishedBismuthBlockBlock.block.getDefaultState().getBlock().getDefaultState(), 3);
+						this.world.setBlockState(blockpos$mutable, FrostStoneBlock.block.getDefaultState().getBlock().getDefaultState(), 3);
 					}
 				}
 			}

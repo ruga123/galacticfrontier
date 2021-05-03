@@ -51,7 +51,7 @@ public class DeepSlimeRenderer {
 		public void render(MatrixStack matrixStackIn, IRenderTypeBuffer bufferIn, int packedLightIn, T entitylivingbaseIn, float limbSwing,
 				float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
 			IVertexBuilder ivertexbuilder = bufferIn
-					.getBuffer(RenderType.getEyes(new ResourceLocation("galactic_frontier:textures/deepslimeglow.png")));
+					.getBuffer(RenderType.getEyes(new ResourceLocation("galactic_frontier:textures/deepglowtexture.png")));
 			this.getEntityModel().render(matrixStackIn, ivertexbuilder, 15728640, OverlayTexture.NO_OVERLAY, 1, 1, 1, 1);
 		}
 	}

@@ -3,7 +3,7 @@
   "type": "minecraft:stonecutting",
   "count": 2,
   "ingredient": {
-    "item": "galactic_frontier:frost_stone_loot"
+    "item": "galactic_frontier:frost_stone_block"
   },
   "result": "galactic_frontier:frost_stone_slab"
 }

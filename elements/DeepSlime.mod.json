@@ -6,7 +6,7 @@
     "mobLabel": "",
     "mobModelName": "ModelDeepSlime",
     "mobModelTexture": "deepslime.png",
-    "mobModelGlowTexture": "deepslimeglow.png",
+    "mobModelGlowTexture": "deepglowtexture.png",
     "modelWidth": 0.8,
     "modelHeight": 0.8,
     "modelShadowSize": 0.8,
@@ -130,6 +130,9 @@
     "restrictionBiomes": [
       {
         "value": "CUSTOM:BorealSeas"
+      },
+      {
+        "value": "CUSTOM:FrozenDepths"
       }
     ],
     "spawnInDungeons": false
